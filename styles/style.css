@@ -28,6 +28,32 @@ body {
     background-color: var(--color2);
 }
 
+#pizzaTitle {
+font-family: 'Abel', sans-serif;
+font-family: 'BenchNine', sans-serif;
+font-family: 'News Cycle', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-size: 36px;
+text-align: left;
+}
+
+#date, #print, #bio,  {
+    font-family: 'Abel', sans-serif;
+    color: grey;
+}
+
+#shareButton {
+    font-family: 'Abel', sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: #BC7058;
+    margin: 40px;
+    width: 140px;
+    height: 40px;
+    font-weight: normal;
+    border: #ffffff00;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -59,13 +85,64 @@ header {
     box-shadow: var(--shadow);
 }
 
+#pizzaImage {
+   width: auto;
+   align-items: center;
+}
+
+#mainText {
+    font-family: 'Peddana', serif;  
+    font-size: 23px;
+    color: grey;
+    line-height: 24px;
+    justify-content: space-evenly;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
 footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+#chopped { 
+    text-indent: 30px;
+    }
+#listDiv {
+    background-image: url("../assets/list-bg.png");;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    -ms-grid-column-align: center;
+    padding: 40px;
+    }
+input[type=checkbox]:checked + label {
+        text-decoration: line-through;
+        font-family: 'Patrick Hand', cursive;
+        font-size: 24px;
+        color: grey;
+        text-align: left;
+}
+.list-1 {
+list-style-type: square;
+margin: 30px;
+font-family: 'Patrick Hand', cursive;
+font-size: 23px;
+color: grey;
+text-align: left;
 
+}
+.list-2 {
+    margin: 30px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 24px;
+    color: grey;
+    text-align: left;
+}
 
 h2 {
     font-size: 1.8rem;
@@ -86,6 +163,7 @@ h2 {
 
 
 
+
 content {
     width: 80%;
 }
@@ -94,7 +172,13 @@ p {
     margin: var(--gutter);
 }
   
-footer {
+#Vanessa {
+    font-family: 'Peddana', serif;  
+    font-size: 28px;
+    color: grey;
+}
+
+/footer {
     position: fixed;
     width: 100%;
     bottom: 0;
