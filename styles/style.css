@@ -37,7 +37,7 @@ font-size: 36px;
 text-align: left;
 }
 
-#date, #print, #bio,  {
+#date, #print, #bio, {
     font-family: 'Abel', sans-serif;
     color: grey;
 }
@@ -79,7 +79,7 @@ section {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -207,3 +207,70 @@ p {
     }
 
   }
+/* grid.layoutit.com?id=z58KHyw */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.9fr 3.1fr 0.3fr 1.9fr 2.2fr 0.1fr 1.4fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . ."
+    "MAIN-LOGO TEXTS-AND-STUFF . . ICON . ICON2"
+    ". . . . . . .";
+}
+.MAIN-LOGO {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "LOGO";
+  grid-area: MAIN-LOGO;
+}
+.LOGO { grid-area: LOGO; align-self: center;}
+.TEXTS-AND-STUFF {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    "DELICIOUS"
+    "THE-BEST-FOOD-BLOG-ON-THE-WEB"
+    ".";
+  grid-area: TEXTS-AND-STUFF;
+}
+.DELICIOUS { grid-area: DELICIOUS; }
+.THE-BEST-FOOD-BLOG-ON-THE-WEB { grid-area: THE-BEST-FOOD-BLOG-ON-THE-WEB; }
+.ICON {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 7px;
+  grid-template-areas:
+    ". . . . . ."
+    "FB TWIT GP INSTA FLIC PINT"
+    ". . . . . .";
+  grid-area: ICON;
+}
+.FB { grid-area: FB; }
+.TWIT { grid-area: TWIT; }
+.GP { grid-area: GP; }
+.INSTA { grid-area: INSTA; }
+.FLIC { grid-area: FLIC; }
+.PINT { grid-area: PINT; }
+.ICON2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    "WIFI EMAIL"
+    ". .";
+  grid-area: ICON2;
+}
+.WIFI { grid-area: WIFI; }
+.EMAIL { grid-area: EMAIL; }
